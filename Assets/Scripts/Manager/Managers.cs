@@ -16,6 +16,7 @@ public class Managers : MonoBehaviour
     private static ResourceManager s_resourceManager = new ResourceManager();
     private static SceneManagerEx s_sceneManager = new SceneManagerEx();
     private static SoundManager s_soundManager = new SoundManager();
+
     public static GameManagerEx Game { get { Init(); return s_gameManager; } }
     public static DataManager Data { get { Init(); return s_dataManager; } }
     public static UIManager UI { get { Init(); return s_uiManager; } }

@@ -35,14 +35,6 @@ public class GameManagerEx
 
 	public GameData SaveData { get { return _gameData; } set { _gameData = value; } }
 
-    #region 재화
-
-    #endregion
-
-    #region 시간
-
-    #endregion
-
     public void Init()
 	{
 		//StartData data = Managers.Data.Start;

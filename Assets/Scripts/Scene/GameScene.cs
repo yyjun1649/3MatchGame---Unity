@@ -11,8 +11,8 @@ public class GameScene : BaseScene
 			return false;
 
 		SceneType = Define.Scene.Game;
-		Managers.UI.ShowPopupUI<UI_BoardPopup>();
-		Debug.Log("Init");
+		Managers.UI.ShowPopupUI<UI_StartPopup>();
+        Managers.Sound.Play(Define.Sound.Bgm, "Sound_BackGround", 1, 1);
 		return true;
 	}
 }

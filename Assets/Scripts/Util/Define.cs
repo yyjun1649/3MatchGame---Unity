@@ -35,22 +35,22 @@ public class Define
 	public enum ColorType
 	{
 		None = 0,
-		Blue = 1,
-		Green = 2,
-		Red = 3,
-		Yellow = 4,
-		Gray = 5,
-		Cyan = 6,
-		Count = 7
+		Apple = 1,
+		Banana = 2,
+		Grape = 3,
+		Orange = 4,
+		PineApple = 5,
+		Count = 6,
 	}
 
 	public enum PieceType
 	{
-		Munchkin = 0,
-		RowClear = 1,
-		ColumnClear = 2,
-		Bomb = 3,
-		RainBow = 4,
+		None = 0,
+		Munchkin = 1,
+		HorClear = 2,
+		VerClear = 3,
+		Bomb = 4,
+		RainBow = 5,
 	}
 
 	public enum CellType
@@ -58,7 +58,7 @@ public class Define
 		EMPTY = 0, // 피스가 존재할 수 없음
 		BASIC = 1, // 피스가 존재할 수 있는 기본상태
 		BLOCKER = 2, // 장애물
-		HOLE=3,
+		COUNT = 3
 	}
 
     public enum BlockType
@@ -66,6 +66,7 @@ public class Define
         EMPTY = 0,
         BASIC = 1,
 		PIECE = 2,
+		NEVER = 3,
 	}
 
 	public enum MoveType
@@ -81,21 +82,5 @@ public class Define
 		SUFFLE,
 		Match,
 	}
-
-
-	public struct CheckNode
-    {
-		public int x;
-		public int y;
-        public int Hfloor;
-		public int Vfloor;
-
-        public CheckNode(int _x, int _y, int f, int vf)
-         {
-			x = _x;
-			y = _y;
-			Hfloor = f;
-			Vfloor = vf;
-         }
-    }   
+  
 }

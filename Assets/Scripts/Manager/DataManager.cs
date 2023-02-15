@@ -16,20 +16,15 @@ public interface ILoader<Key, Item>
 
 public class DataManager
 {
-	//public StartData Start { get; private set; }
-	//public Dictionary<int, TextData> Texts { get; private set; }
-	//public Dictionary<int, CollectionData> Collections { get; private set; }
 
-	public void Init()
+    public Stage6Data Stage6 { get; private set; }
+
+    public void Init()
     {
-		//Start = LoadSingleXml<StartData>("StartData");
-		//Texts = LoadXml<TextDataLoader, int, TextData>("TextData").MakeDic();
-		
+        string _path = Application.persistentDataPath;
 
-		// Collection
-		//var collectionLoader = LoadXml<CollectionDataLoader, int, CollectionData>("CollectionData");
-		//Collections = collectionLoader.MakeDic();
-	}
+        Stage6 = LoadSingleXml<Stage6Data>("Stage6Data");
+    }
 
     private Item LoadSingleXml<Item>(string name)
 	{
